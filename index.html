@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hendi Travel Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#25D366;
+padding:14px 30px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* SECTION */
+
+.section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+/* ROUTE */
+
+.route{
+display:flex;
+justify-content:space-between;
+background:white;
+padding:15px 20px;
+margin-bottom:15px;
+border-radius:6px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* CTA */
+
+.cta{
+background:#0a2540;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.cta a{
+background:#25D366;
+padding:15px 30px;
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>JTC Jasa Travel Cianjur</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Layanan</a></li>
+<li><a href="#">Rute</a></li>
+<li><a href="#">Armada</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div>
+
+<h1>Travel Nyaman & Aman</h1>
+
+<p>Layanan travel door to door terpercaya</p>
+
+<a class="btn" href="https://wa.me/085659652812" target="_blank" onclick="openChat()">Pesan Sekarang</a>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Travel Antar Kota</h3>
+<p>Door to door service nyaman dan aman.</p>
+</div>
+
+<div class="card">
+<h3>Drop Bandara</h3>
+<p>Layanan antar jemput bandara.</p>
+</div>
+
+<div class="card">
+<h3>Sewa Mobil</h3>
+<p>Hiace, Avanza, Innova untuk perjalanan.</p>
+</div>
+
+<div class="card">
+<h3>Kirim Paket</h3>
+<p>Pengiriman barang cepat via travel.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="title">Rute Populer</h2>
+
+<div class="route">
+<span>Jakarta → Bandung</span>
+<span>Mulai Rp150.000</span>
+</div>
+
+<div class="route">
+<span>Jakarta → Bogor</span>
+<span>Mulai Rp120.000</span>
+</div>
+
+<div class="route">
+<span>Jakarta → Cirebon</span>
+<span>Mulai Rp250.000</span>
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="title">Testimoni Pelanggan</h2>
+
+<div class="grid">
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Travel sangat nyaman dan tepat waktu.</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Sopir ramah dan mobil bersih.</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Booking mudah via WhatsApp.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>Pesan Travel Sekarang</h2>
+
+<p>Hubungi admin via WhatsApp untuk booking cepat</p>
+
+<br>
+
+<a href="https://api.whatsapp.com/send?phone=6285659652812" target="_blank">Chat WhatsApp</a>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 TravelPro</p>
+
+</footer>
+<style>
+
+.whatsapp-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+.chat-popup{
+position:fixed;
+bottom:100px;
+right:20px;
+width:300px;
+background:white;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+display:none;
+overflow:hidden;
+font-family:Arial;
+z-index:999;
+}
+
+.chat-header{
+background:#25D366;
+color:white;
+padding:15px;
+font-weight:bold;
+}
+
+.chat-body{
+padding:15px;
+color:#333;
+}
+
+.chat-body p{
+margin-bottom:15px;
+}
+
+.chat-body a{
+display:block;
+background:#25D366;
+color:white;
+padding:10px;
+text-align:center;
+border-radius:5px;
+text-decoration:none;
+}
+
+.close-chat{
+position:absolute;
+right:15px;
+top:10px;
+color:white;
+cursor:pointer;
+font-size:18px;
+}
+
+</style>
+
+<div class="chat-popup" id="waChat">
+
+<div class="chat-header">
+
+Customer Service
+
+<span class="close-chat" onclick="closeChat()">×</span>
+
+</div>
+
+<div class="chat-body">
+
+<p>Halo 👋<br>
+Butuh bantuan atau ingin booking travel?</p>
+
+<a href="https://api.whatsapp.com/send?phone=6285659652812" target="_blank">
+Chat WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div class="whatsapp-button" onclick="openChat()">
+
+
+<svg viewBox="0 0 32 32">
+<path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.887.757 5.707 2.196 8.183L0 32l7.63-2.156a15.96 15.96 0 008.37 2.364h.007C24.84 32.208 32 25.044 32 16.208 32 7.372 24.836.396 16 .396zm8.613 22.252c-.364 1.024-2.11 1.961-2.91 2.06-.745.092-1.69.13-2.728-.202-.63-.201-1.437-.466-2.482-.92-4.364-1.885-7.206-6.283-7.427-6.578-.222-.295-1.764-2.35-1.764-4.484s1.122-3.185 1.52-3.625c.397-.443.866-.553 1.154-.553.289 0 .577.003.83.016.266.013.623-.101.974.741.364.888 1.236 3.073 1.345 3.296.11.222.184.48.037.775-.148.296-.222.48-.438.738-.222.258-.466.577-.664.775-.222.222-.453.462-.194.906.258.443 1.147 1.89 2.463 3.062 1.692 1.507 3.12 1.975 3.563 2.197.443.222.701.185.96-.111.259-.295 1.11-1.296 1.407-1.74.295-.443.59-.369.997-.221.406.147 2.576 1.215 3.017 1.435.443.221.738.332.848.517.11.184.11 1.07-.253 2.095z"/>
+</svg>
+
+</div>
+
+<script>
+
+function openChat(){
+document.getElementById("waChat").style.display="block";
+}
+
+function closeChat(){
+document.getElementById("waChat").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
